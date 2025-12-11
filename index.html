@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDG PRMIT&R Application</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo-area">
+                <span class="logo-bracket"><</span>
+                <span class="logo-text">GDG</span>
+                <span class="logo-bracket">/></span>
+            </div>
+            <h1>PRMIT&R Chapter</h1>
+            <p>Join the community of developers. Build, code, and innovate.</p>
+        </header>
+
+        <form action="#" class="application-form">
+            <div class="form-section">
+                <h3><i class="fas fa-user"></i> Personal Info</h3>
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="e.g. Aditi Sharma" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="e.g. aditi@example.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="e.g. +91 98765 43210" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-graduation-cap"></i> Academic Details</h3>
+                <div class="row">
+                    <div class="input-group">
+                        <label for="year">Year</label>
+                        <select id="year" required>
+                            <option value="" disabled selected>Select Year</option>
+                            <option value="1">1st Year</option>
+                            <option value="2">2nd Year</option>
+                            <option value="3">3rd Year</option>
+                            <option value="4">4th Year</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="branch">Branch</label>
+                        <select id="branch" required>
+                            <option value="" disabled selected>Select Branch</option>
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                            <option value="ENTC">EnTC</option>
+                            <option value="MECH">Mechanical</option>
+                            <option value="CIVIL">Civil</option>
+                            <option value="AI">AI/DS</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-code"></i> Coding Profile</h3>
+                <p class="subtitle">Show us what you've got!</p>
+                
+                <div class="input-group">
+                    <label for="github"><i class="fab fa-github"></i> GitHub Profile</label>
+                    <input type="url" id="github" placeholder="https://github.com/username">
+                </div>
+                <div class="input-group">
+                    <label for="linkedin"><i class="fab fa-linkedin"></i> LinkedIn Profile</label>
+                    <input type="url" id="linkedin" placeholder="https://linkedin.com/in/username">
+                </div>
+
+                <div class="skills-section">
+                    <label>Skills (Select all that apply)</label>
+                    <div class="checkbox-grid">
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="html">
+                            <span>HTML/CSS</span>
+                        </label>
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="js">
+                            <span>JavaScript</span>
+                        </label>
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="react">
+                            <span>React</span>
+                        </label>
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="python">
+                            <span>Python</span>
+                        </label>
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="java">
+                            <span>Java</span>
+                        </label>
+                         <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="cpp">
+                            <span>C++</span>
+                        </label>
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="git">
+                            <span>Git/GitHub</span>
+                        </label>
+                        <label class="checkbox-btn">
+                            <input type="checkbox" name="skills" value="cloud">
+                            <span>Cloud</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-lightbulb"></i> Motivation</h3>
+                <div class="input-group">
+                    <label for="motivation">Why do you want to join GDG PRMIT&R?</label>
+                    <textarea id="motivation" rows="4" placeholder="Tell us about your passion for technology..." required></textarea>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+        </form>
+        
+        <footer class="footer">
+            <p>&copy; 2025 Google Developers Group PRMIT&R</p>
+        </footer>
+    </div>
+</body>
+</html>
